@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "M7REGoQ1gzuLzBD7rgXIlBuz099ijXN8++2D8BRHbXc=",
+  "Source": "Aris.api",
+  "BasePath": "_content/Aris.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

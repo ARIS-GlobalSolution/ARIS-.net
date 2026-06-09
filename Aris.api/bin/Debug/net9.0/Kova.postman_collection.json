@@ -1,0 +1,319 @@
+﻿{
+  "info": {
+    "_postman_id": "a5d35718-f1f9-4a3f-9d32-1fb3dbf03101",
+    "name": "Kova API",
+    "description": "Collection baseada no padrão do Recommenda para a API Kova/CP-NET.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categoria - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  if (body.id) pm.collectionVariables.set('categoriaId', body.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Camisetas\",\n  \"descricao\": \"Categoria de camisetas básicas\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/categoria",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "categoria"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Categoria - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/categoria/{{categoriaId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "categoria", "{{categoriaId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cliente - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  if (body.id) pm.collectionVariables.set('clienteId', body.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Lucas Teste\",\n  \"email\": \"lucas.teste@kova.com\",\n  \"telefone\": \"11999999999\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/cliente",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cliente"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cliente - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/cliente/{{clienteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cliente", "{{clienteId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pagamento - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  if (body.id) pm.collectionVariables.set('pagamentoId', body.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": 0,\n  \"tipo\": 2\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/pagamento",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pagamento"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pagamento - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/pagamento/{{pagamentoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pagamento", "{{pagamentoId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Produto - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  if (body.id) pm.collectionVariables.set('produtoId', body.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Camiseta Preta\",\n  \"descricao\": \"Camiseta básica de algodão premium\",\n  \"preco\": 89.90,\n  \"categoriaId\": \"{{categoriaId}}\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/produto",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "produto"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Produto - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/produto/{{produtoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "produto", "{{produtoId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pedido - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "  const body = pm.response.json();",
+              "  if (body.id) pm.collectionVariables.set('pedidoId', body.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"valorTotal\": 89.90,\n  \"status\": 0,\n  \"clienteId\": \"{{clienteId}}\",\n  \"pagamentoId\": \"{{pagamentoId}}\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/pedido",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pedido"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pedido - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/pedido/{{pedidoId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pedido", "{{pedidoId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cliente - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/cliente",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cliente"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Categoria - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/categoria",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "categoria"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Produto - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/produto",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "produto"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pagamento - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/pagamento",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pagamento"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pedido - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/pedido",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "pedido"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "https://localhost:7001" },
+    { "key": "categoriaId", "value": "" },
+    { "key": "clienteId", "value": "" },
+    { "key": "pagamentoId", "value": "" },
+    { "key": "produtoId", "value": "" },
+    { "key": "pedidoId", "value": "" }
+  ]
+}
+

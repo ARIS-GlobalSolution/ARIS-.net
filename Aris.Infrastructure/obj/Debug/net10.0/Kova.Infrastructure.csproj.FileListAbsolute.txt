@@ -1,0 +1,15 @@
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\bin\Debug\net10.0\Kova.Infrastructure.deps.json
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\bin\Debug\net10.0\Kova.Infrastructure.runtimeconfig.json
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\bin\Debug\net10.0\Kova.Infrastructure.dll
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\bin\Debug\net10.0\Kova.Infrastructure.pdb
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.AssemblyInfo.cs
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.sourcelink.json
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.dll
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\refint\Kova.Infrastructure.dll
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.pdb
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\Kova.Infrastructure.genruntimeconfig.cache
+C:\Users\erick\OneDrive\Documentos\CP1-.NET\KOVA\Kova.Infrastructure\obj\Debug\net10.0\ref\Kova.Infrastructure.dll
