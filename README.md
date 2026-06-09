@@ -324,7 +324,7 @@ As evidencias complementares da entrega podem ser encontradas na pasta `/docs`, 
 
 ## Links da Entrega
 
-- Video de demonstracao: 
+- Video de demonstracao: https://youtu.be/v9bTbQkp-1w?si=4n0YqEnjGxkvWQKO
 - Video Pitch: 
 - Link Repositório: https://github.com/ARIS-GlobalSolution/ARIS-.net.git
 
